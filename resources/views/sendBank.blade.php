@@ -18,10 +18,7 @@
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             <div class="max-w-8xl mx-auto sm:px-6 lg:px-12">
                 <div class="ml-12 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                    <div id="app">
-                        <app />
-                    </div>
-                    Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+                    @livewire('transfer', ['code' => $code, 'email' => $email])
                 </div>
             </div>
         </div>
